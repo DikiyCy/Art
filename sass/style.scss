@@ -1,0 +1,32 @@
+@import 'base/variables';
+
+.body {
+    position: relative;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	background-color: $darkThemesMainColor;
+    &_light {
+        background-color: $lightThemesMainColor;
+    }
+}
+.container {
+    max-width: 1080px;
+    min-width: 410px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hidden {
+    display: none;
+}
+
+@import 'block/header';
+@import 'block/gallery';
+@import 'block/navbar';
+@import 'block/filter';
+@import 'block/modal';
+
+@import 'block/button';
+@import 'block/close';
+
+@import 'base/media';

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Art</title>
+
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo mobile_hidden">IBUY.ART</div>
+                <div class="header__buttons">
+                    <div class="button" data-button="Top">Top</div>
+                    <div class="button" data-button="Painter">Painter</div>
+                    <div class="button" data-button="Desing">Desing</div>
+                    <div class="button" data-button="Tags">Tags</div>
+                </div>
+            </div>
+            <div class="header__filter">
+                <input class="header__search" name="Search" type="text" placeholder=" &#128269; Search" id="search"  title="Введите ключевые слова через пробел">
+                <div class="header__img">
+                    <img src="icon/mixer.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- section1 modal-filter for gallery -->
+    <section class="filter">
+        <div class="filter__header">
+            <div class="filter__title">Filter</div>
+            <div class="close filter_close">
+                <img src="icon/close.svg" alt="close">
+            </div>
+        </div>
+
+        <form name="filterForm" action="" method="POST" enctype="multipart/form-data">
+            <div class="filter__option">
+                <div class="filter__subtitle">Price ( $ )</div>
+                <div class="filter__button">
+                    <div class="button button_filter" data-button="0-200">0-200</div>
+                    <div class="button button_filter" data-button="200-400">200-400</div>
+                    <div class="button button_filter" data-button="400-600">400-600</div>
+                    <div class="button button_filter" data-button="MorePrise">More</div>
+                </div>
+            </div>
+            <div class="filter__option filter__option_range hidden">
+                <div class="filter__subtitle filter__subtitle_range">0 – $1 000 000</div>
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+            </div>
+            <div class="filter__option">
+                <div class="filter__subtitle">Shape</div>
+                <div class="filter__button">
+                    <div class="button button_filter" data-button="Circle">Circle</div>
+                    <div class="button button_filter" data-button="Square">Square</div>
+                    <div class="button button_filter" data-button="Rectangle">Rectangle</div>
+                    <div class="button button_filter" data-button="Triangle">Triangle</div>
+                </div>
+            </div>
+            <div class="filter__option">
+                <div class="filter__subtitle">Size ( Width / Height)</div>
+                <div class="filter__wrapper">
+                    <div class="filter__button">
+                        <div class="button button_filter" data-button="0-200">0-200</div>
+                        <div class="button button_filter" data-button="200-400">200-400</div>
+                        <div class="button button_filter" data-button="400-600">400-600</div>
+                        <div class="button button_filter" data-button="MoreWidth">More</div>
+                    </div>
+                    <div class="filter__button">
+                        <div class="button button_filter" data-button="0-200">0-200</div>
+                        <div class="button button_filter" data-button="200-400">200-400</div>
+                        <div class="button button_filter" data-button="400-600">400-600</div>
+                        <div class="button button_filter" data-button="MoreHeight">More</div>
+                    </div>
+                </div>
+            </div>
+                <input type="submit" class="filter__submit" value="Apply">
+        </form>
+    </section>
+
+    <!-- section2 - gallery with image -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery__item">
+                <img src="https://i.pinimg.com/736x/0d/df/27/0ddf276a527b0a9cb1e26ad90080d5e7.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section for navigation menu -->
+    <section class="navbar">
+        <div class="navbar__wrapper" data-attrNavbarIcon="1">
+            <div class="navbar__icon">
+                <img src="icon/home.svg" alt="Feed">
+            </div>
+            <div class="navbar__title  mobile_hidden">Feed</div>
+        </div>
+        <div class="navbar__wrapper" data-attrNavbarIcon="2">
+            <div class="navbar__icon">
+                <img src="icon/menu.svg" alt="Gallery">
+            </div>
+            <div class="navbar__title mobile_hidden">Gallery</div>
+        </div>
+        <div class="navbar__wrapper" data-attrNavbarIcon="3">
+            <div class="navbar__icon">
+                <img src="icon/add.svg" alt="Deals">
+            </div>
+            <div class="navbar__title mobile_hidden">Deals</div>
+        </div>
+        <div class="navbar__wrapper" data-attrNavbarIcon="4">
+            <div class="navbar__icon">
+                <img src="icon/chat.svg" alt="Notify">
+            </div>
+            <div class="navbar__title mobile_hidden">Notify</div>
+        </div>
+        <div class="navbar__wrapper" data-attrNavbarIcon="5">
+            <div class="navbar__icon">
+                <img src="icon/user.svg" alt="Profile">
+            </div>
+            <div class="navbar__title mobile_hidden">Profile</div>
+        </div>
+    </section>
+
+    <!-- modal for feed -->
+    <div class="modal hidden" data-attrModal="1">
+        <div class="modal__container">
+            <div class="close close_modal">
+                <img src="icon/close.svg" alt="close">
+            </div>
+            <div class="modal__title">section "Feed" in development</div>
+        </div>
+    </div>
+
+    <!-- modal for gallery -->
+    <div class="modal hidden" data-attrModal="2">
+        <div class="modal__container">
+            <div class="close close_modal">
+                <img src="icon/close.svg" alt="close">
+            </div>
+            <div class="modal__title">section "Gallery" in development</div>
+        </div>
+    </div>
+
+    <!-- modal for deals -->
+    <div class="modal hidden" data-attrModal="3">
+        <div class="modal__container">
+            <div class="close close_modal">
+                <img src="icon/close.svg" alt="close">
+            </div>
+            <div class="modal__title">section "Deals" in development</div>
+        </div>
+    </div>
+
+    <!-- modal for notify -->
+    <div class="modal hidden" data-attrModal="4">
+        <div class="modal__container">
+            <div class="close close_modal">
+                <img src="icon/close.svg" alt="close">
+            </div>
+            <div class="modal__title">section "Notify" in development</div>
+        </div>
+    </div>
+
+    <!-- modal for profile -->
+    <div class="modal hidden" data-attrModal="5">
+        <div class="modal__container">
+            <div class="close close_modal">
+                <img src="icon/close.svg" alt="close">
+            </div>
+            <div class="modal__title">Choose your interface theme</div>
+            <form class="modal__form" action="#">
+                <label><input name="theme" id="dark" type="radio" value="dark">  Dark</label>
+                <label><input name="theme" id="light" type="radio" value="light">  Light</label>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

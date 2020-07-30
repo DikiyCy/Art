@@ -1,0 +1,82 @@
+.filter {
+    max-width: 470px;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: 1s;
+    background-color: $darkThemesBGColor;
+    z-index: 10;
+    &__header {
+        padding: 10px 28px 0 29px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 34px;
+    }
+    &__option {
+        padding: 10px 28px 10px 29px;
+        &_range {
+            text-align: center;
+            input {
+                width: 100%;
+            }
+        }
+    }
+    &__wrapper {
+        .filter__button:nth-child(1) {
+            margin-bottom: 10px;
+        }
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: $darkThemesColorFontFilter;
+    }
+    &__subtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: $darkThemesColorFontFilter;
+        &_range {
+            margin-bottom: 0px;
+        }
+    }
+    &__button {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+    &__items {
+        margin-bottom: 40px;
+    }
+    &__submit {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background-color: $darkThemesBGColorSubmit;
+        border: none;
+        color: $darkThemesColorFont;
+        font-size: 20px;
+    }
+    &_active {
+        right: 0;
+        transition: 1s;
+    }
+    &_light {
+        background-color: $lightThemesBGColorSearch;
+        .filter {
+            &__title, &__subtitle {
+                color: $lightThemesColorFontFilter;
+            }
+            &__submit {
+                background-color: $lightThemesMainColor;
+                color: $darkThemesBGColor;
+            }
+        }
+    }
+}

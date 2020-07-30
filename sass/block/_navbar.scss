@@ -1,0 +1,44 @@
+.navbar {
+    width: 85%;
+    min-width: 410px;
+    max-width: 910px;
+    height: 90px;
+    position: fixed;
+    bottom: 20px;
+    background-color: $darkThemesMainColor;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__icon {
+        height: 30px;
+        text-align: center;
+          img {
+            height: 100%;
+        }
+    }
+    &__title {
+        color: $darkThemesColorFont;
+        font-size: 16px;
+    }
+    &_light {
+        background-color: $lightThemesBGColorNavbar;
+        opacity: 0.9;
+        .navbar__title {
+            color: $lightThemesColorFont;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+.close {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    img {
+        width: 100%;
+    }
+    &_modal {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+}
